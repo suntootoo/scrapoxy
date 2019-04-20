@@ -88,7 +88,7 @@ function getProvidersByType() {
                     SecurityGroupIds: [
                         process.env.PROVIDERS_AWSEC2_INSTANCE_SECURITYGROUPIDS
                     ],
-                    SubnetId: process.env.PROVIDERS_AWSEC2_INSTANCE_SUBNETID
+                    SubnetId: process.env.PROVIDERS_AWSEC2_INSTANCE_SUBNETID,
                 },
                 tag: process.env.PROVIDERS_AWSEC2_TAG || 'Proxy',
                 max,
