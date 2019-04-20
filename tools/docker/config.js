@@ -82,11 +82,8 @@ function getProvidersByType() {
                 instance: {
                     InstanceType: process.env.PROVIDERS_AWSEC2_INSTANCE_INSTANCETYPE || 't1.micro',
                     ImageId: process.env.PROVIDERS_AWSEC2_INSTANCE_IMAGEID || 'ami-c74d0db4',
-                    SecurityGroups: [
-                        process.env.PROVIDERS_AWSEC2_INSTANCE_SECURITYGROUPS || 'forward-proxy',
-                    ],
                     SecurityGroupIds: [
-                        process.env.PROVIDERS_AWSEC2_INSTANCE_SECURITYGROUPIDS
+                        process.env.PROVIDERS_AWSEC2_INSTANCE_SECURITYGROUPIDS,
                     ],
                     SubnetId: process.env.PROVIDERS_AWSEC2_INSTANCE_SUBNETID,
                 },
